@@ -1409,6 +1409,7 @@ errout:
 static struct dentry *ext4_lookup(struct inode *dir, struct dentry *dentry, unsigned int flags)
 {
 	struct inode *inode;
+	//ext4没有hash值
 	struct ext4_dir_entry_2 *de;
 	struct buffer_head *bh;
 
